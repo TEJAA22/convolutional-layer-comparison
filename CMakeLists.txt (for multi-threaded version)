@@ -1,0 +1,12 @@
+Multi-threaded C++ Implementation:
+
+cmake_minimum_required(VERSION 3.10)
+project(convolution_cpp_multithreaded)
+
+set(CMAKE_CXX_STANDARD 11)
+
+find_package(Threads)
+
+add_executable(convolution_multithreaded main_multithreaded.cpp)
+
+target_link_libraries(convolution_multithreaded ${CMAKE_THREAD_LIBS_INIT})
